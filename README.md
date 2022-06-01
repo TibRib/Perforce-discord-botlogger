@@ -39,12 +39,13 @@ webhook = YOUR_WEBHOOK_URL_HERE
 
 [Perforce]
 #Suggestion : set target to empty for a root changelist
-target = //MY_FOLDER/...
+target = //MY_PERFORCE_FOLDER/...
 
 [ApplicationSettings]
 max_changes = 10
 enable_signature = yes
 ```
+If you don't know how to obtain a discord webhook url for your text channel, take a look at [this discord article](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
 
 ## Set the changelist last stamp
 As the bot is likely to be used on an already existing perforce environment, you need to change the value in the file ```last_change.ini```. Replace 0 with the latest change number.
