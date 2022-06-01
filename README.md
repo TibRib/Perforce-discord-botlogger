@@ -1,5 +1,7 @@
 # Perforce Discord Submit logger 📫
-A simple python program to use with a scheduler that will notify a provided discord channel when changes have been submitted to a perforce repository
+A simple python program to use with a scheduler that will notify a provided discord channel when changes have been submitted to a perforce repository.
+
+<img src="assets/example.png" style="max-width: 500px">
 
 # Requirements
 The app is a python script that uses the [p4 changes](https://www.perforce.com/manuals/cmdref/Content/CmdRef/p4_changes.html) command, you need to make sure you have a constant access to `p4 changes`.
