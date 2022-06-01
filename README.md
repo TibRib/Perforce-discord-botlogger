@@ -1,5 +1,6 @@
 # Perforce Discord Submit logger 📫
 A simple python program to use with a scheduler that will notify a provided discord channel when changes have been submitted to a perforce repository.
+This bot is inspired by [James Ives's Perforce Commit Logger](https://github.com/JamesIves/perforce-commit-discord-bot) by getting rid of its limitations.
 
 <img src="assets/example.png" style="max-width: 500px">
 
@@ -85,3 +86,10 @@ Same as for my tip on the loggin, if you are on Windows (use a cron in unix),
 ## Notes
 - ARM64 is not supported by helix perforce. Given that, a raspberry type dedicated server **cannot** be used to host this bot...
 - This bot is well suited for a dedicated python server on cloud instances (AWS, Azure, Google Cloud...)
+
+
+
+# Licence and credits
+The licence for this project is MIT.
+
+The project is inspired by Perforce Commit Logger, by James Ives.  https://github.com/JamesIves/perforce-commit-discord-bot
