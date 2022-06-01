@@ -21,6 +21,14 @@ Powershell.exe -windowstyle hidden -ExecutionPolicy Unrestricted -command "echo 
 ```
 After that, [add a task to your Windows Scheduler](https://digicruncher.com/task-scheduler-in-windows-10/) to run this batch program on startup and every hour.
 
+## Python requirements
+Make sure to run
+```
+cd app
+pip install -r requirements.txt
+``` 
+before first running the program (python3 required of course).
+
 # Configuration
 You need to configure some options declared in the `config.ini` file:
 ```ini
