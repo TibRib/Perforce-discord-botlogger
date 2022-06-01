@@ -43,6 +43,22 @@ target = //MY_FOLDER/...
 max_changes = 10
 enable_signature = yes
 ```
+
+## Set the changelist last stamp
+As the bot is likely to be used on an already existing perforce environment, you need to change the value in the file ```last_change.ini```. Replace 0 with the latest change number.
+
+Once the bot runs, this file will be updated every time a newer submit is found.
+### Exemple:
+I get the latest change on my perforce server.
+```css
+C:\Users\Me> p4 changes -m 1
+Change 139208 on 2022/06/01 by someone@MY_LAPTOP 'new feature'
+```
+The number can now be written to the ini, by opening the file in your text editor or using a terminal.
+```sh
+echo 139208 > app/last_change.ini
+```
+
 ## Extras
 If you want to use custom bot signatures, make sure that `enable_signature=yes` in the configuration ini file, and modify the content of the `bot_signatures.json` file.
 ```json
