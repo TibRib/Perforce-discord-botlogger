@@ -88,8 +88,7 @@ class PerforceLogger():
       """ Posts each changes to the Discord server using the provided webhook. """
       changes_as_str = self.p4_fetch(max=7)
       changes = self.regroup_changes(changes_as_str)
-
-      for payload in changes:
+      for payload in reversed(changes):
         if(payload != ''):
           user = payload.user.split("@")[0]
           message = DiscordWebhooks(self.webhook_url)
